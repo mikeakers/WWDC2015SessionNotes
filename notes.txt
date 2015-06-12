@@ -1,0 +1,243 @@
+What's new in Xcode [9:00 AM]
+	App thinning and slicing
+		Use asset catalogs
+		Asset catalogs can contain arbitrary data types now
+	Debugging
+		Address sanitizer [9:23 AM]
+			Finds buffer overuns and dangling pointers [9:24 AM] 
+			Located in run options in run scheme [9:25 AM]
+			related sessions [9:28 AM]
+				#session Advanced debugging and the address sanitizer 
+				#session Whats new in LLDB
+	Crash logs [9:29 AM]
+		#LABQ Source control integration? [9:32 AM] 
+			Can Xcode automatically check out the version of the code for the build the crash occured in?
+	Testing [9:33 AM]
+		UI testing [9:34 AM]
+		#LABQ can user interface testig be used  in jenkins? Or only build bot?
+		Code coverage [9:35 AM]
+			enable in scheme's test action [9:35 AM]
+
+Introducing WatchKit for watchOS 2 [10:00 AM]
+	WatchKit
+		WKInterfacePicker [10:04 AM]
+			3 styles
+			coordinated image [10:07 AM]
+		Animation and layout [10:08 AM]
+			#Session layout and animation techniques for watchkit
+		Taptic Engine [10:09 AM]
+			WKHapticType [10:09 AM]
+			#session designing for apple watch [10:09 AM]
+		Microphone [10:10 AM]
+			Brings up recording sheet [10:10 AM]
+			top right button can be changed [10:10 AM]
+		Video playback: WKInterfaceMovie [10:11 AM]
+		For audio there is an api similar to AVFoundation [10:13 AM]
+		Alerts [10:13 AM]
+		Open system URL for initiating messages, phone calls, etc [10:14 AM]
+		PassKit integration [10:15 AM]
+	ClockKit [10:16 AM]
+		How you make complications [10:16 AM]
+		Data for complications is passed in a a timeline [10:18 AM]
+		#session creating complications with clockkit
+	Networking [10:18 AM]
+		To access internet us NSURLSession
+		#session networking with nsurlsession [10:19 AM]
+		Watch connectivity [10:22 AM]
+		#session introducing watch connectivity [10:23 AM]
+	Core Location [10:25 AM]
+		new simplified api for getting current location with single call (iOS9/wOS2 only)[10:25 AM]
+		#session whats new in core location
+	HealthKit [10:26 AM]
+		Using workout api to record heart rate at a higher frequency [10:27 AM]
+		data collection continues in background when app is suspended
+		#session whats new in healthkit [10:28 AM]
+	Security
+		#session Seurity and your apps [10:28 AM]
+	MapKit
+		Subset is available on watch [10:29 AM]
+		MKMapItem can be passed to phone for navigation [10:29 AM]
+		#session What's new in mapkit [10:29 AM]
+	Contacts [10:30 AM]
+	EventKit [10:31 AM]
+	Watch OS transition guide 
+	#evangelist behrens@apple.com watchOS evangelist
+	#LABQ can i still develop and test watchOS 1 apps with watchOS 2 installed?
+
+
+What's new in Swift [11:00 AM]
+	Fundamentals [11:04 AM]
+		Enums [11:04 AM]
+			Can now be printed with a useful value
+			Associated values of multiple tyepes [11:04 AM]
+			Recursive enums are now allowed [11:05 AM]
+				indirect keyword
+		do statement to create a scope
+			old do renamed to "repeat" [11:07 AM]
+		Option Sets
+			more "set like" [11:08 AM]
+			OptionSetType protocol
+			#session protocol oriented programming in swift [11:08 AM]
+		Functions and methods
+			function have now argument labels at call site now [11:09 AM]
+			underscore disables argument labels [11:11 AM]
+			# argument syntax is gone
+	Commpiler
+		Better diagnostics and warnings [11:12 AM]
+	SDK improvements
+		nullability and type of collections can be expressed in Objective-C
+		#session swift and objective-C interoperability
+		#session whats new in Cocoa
+	Unit testing [11:14 AM]
+		When testing access control is disabled
+		@testable [11:15 AM]
+	Rich comments [11:15 AM]
+	Migrator
+	Readline
+		lots more [11:17 AM]
+	new swift programming book [11:16 AM]
+	Pattern matching [11:17 AM]
+		if let where [11:17 AM]
+		Guard statement [11:18 AM]
+			does check and bails out if the check fails
+			can be compounded [11:20 AM]
+		Switches
+			if case for matching a single case instead of longer switch format
+		For in loop [11:21 AM]
+			boolean matching and pattern matching in for loop
+		other improvements [11:21 AM]
+	Availability Checking [11:21 AM]
+		respondsToSelector is an error prone pattern [11:23 AM]
+		compiler checks availibility based on deployment target [11:24 AM]
+		if #available condition added in swift [11:25 AM]
+		also works with guard
+	#session swift in practice
+	Protocol Extensions [11:27 AM]
+		can now make extensions on protocols
+		for example adding functions to CollectionType
+		allows lots of cleanup of standard library [11:29 AM]
+		#session protocol oriented programming in Swift
+	Error Handling [11:31 AM]
+		Kinds of error [11:32 AM]
+		Example [11:36 AM]
+		#LABQ Functions can't throw? [11:39 AM]
+		catch statement has full pattern matching power [11:40 AM]
+		fatalError() [11:40 AM]
+		try! impossible errors [11:41 AM]
+		ErrorType protocol, NSError already conforms to it [11:41 AM]
+		Enums as error types [11:42 AM]
+			just make the enum conform to ErrorTYpe [11:43 AM]
+		#rewatch this section [11:46 AM]
+		defer gets called when current scope is left no matter how. [11:47 AM]
+		implementation note [11:48 AM]
+			swift error handling is more balanced perf wise
+			similar in perf to an explicit if statement
+		if normal NSError convention is followed, it's converted to a throws func
+	#LABQ is swift self hosting?
+
+
+Swift/objective-c interop [1:30 PM]
+	NSError
+	#LABQ where are the conventions for objective-C error method names documented? [1:41 PM]
+	Nullability annotations in obj-c [1:48 PM]
+	null_unspecified [1:50 PM]
+	Generics for objc [1:52 PM]
+	kindof in objc [2:00 PM]
+	should i use id in n api? [2:03 PM]
+		use id when you truly mean "an object of any type" [2:04 PM]
+	#evangelist slesser@apple.com 
+
+What's new in cocoa touch
+	need to watch this one again :(
+	#session introducing address book and contacts in swift
+	location
+		requestLocation for a one time location update
+		#session whats new in core location
+	Mapkit
+		Access to 3d flyover view
+		traffic
+		custom callouts
+	HealthKit
+		New reading types
+		workouts
+	ResearchKit
+		iPad support
+		New active tasks
+		image capture
+		#session building apps with ResearchKit
+	HomeKit [2:56 PM]
+	CloudKit [2:58 PM]
+	On demand resources [2:59 PM]
+		NSBundleReourceRequest
+		Can simulate this in Xcode
+		#session introducing on demand resources
+	App slicing
+		Happens automatically
+		NSDataAsset
+		#session app thinning in xcode
+	Game Center [3:01 PM]
+	SpriteKit [3:02 PM]
+		Now metal backed on platforms that support it
+	GamePlayKit [3:03 PM]
+
+Designing for future hardware [2:30 PM]
+	#LABQ OSC for streaming? [3:04 PM]
+	Multipeer connectivity [3:04 PM]
+	MC framework
+
+mysteries of auto layout, part 2 [1:30 PM]
+	layout Anchors! [1:46 PM]
+	Contraining negative space [1:48 PM]
+		UILayoutGuide [1:49 PM]
+	Debugging your layout
+		unsatisfiable constraints [1:51 PM]
+		understanding the log [1:54 PM]
+		set accessibility identifiers	
+		view constraints one ais at a  time [1:55 PM]
+	resolving ambiguity [1:58 PM]
+		Diagnostic Tools [2:02 PM]
+		_autolayouttrace
+		excerciseAmbiguityInLayout
+
+Seamless linking to your app [3:30 PM]
+	NSURLQueryItem [3:42 PM]
+	Website must verify that app is allowed to open url [3:42 PM]
+	apple-app-site-association file [3:43 PM]
+	wildcard certificate [3:45 PM]
+	json file must be signed
+	openssl smime [3:45 PM]
+	app delegate updates (same as handoff) [3:49 PM]
+	demo [3:50 PM]
+	smart app banners [4:00 PM]
+	dealing with login forms [4:04 PM]
+	shared web credentials [4:05 PM]
+	updating safari's saved web creds [4:09 PM]
+	#session your app, your website and safari (WWDC 2014) [4:10 PM]
+
+Cocoa Touch Best Practices [1:31 PM]
+	App lifecycle
+		launch quickly [1:33 PM]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
