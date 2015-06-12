@@ -214,9 +214,50 @@ Seamless linking to your app [3:30 PM]
 	updating safari's saved web creds [4:09 PM]
 	#session your app, your website and safari (WWDC 2014) [4:10 PM]
 
-Cocoa Touch Best Practices [1:31 PM]
+Cocoa Touch Best Practices [1:30 PM]
 	App lifecycle
 		launch quickly [1:33 PM]
+	Leverage Frameworks [1:37 PM]
+	Target the 2 most major releases [1:39 PM]
+	include version fallbacks [1:40 PM]
+	View and view controller best practices [1:41 PM]
+		layout on modern devices [1:41 PM]
+			layout in terms of proportions 
+			avoid hard coded layout values [1:42 PM]
+			size classes [1:42 PM]
+				size thesholds [1:44 PM]
+			properties, not tags! [1:45 PM]
+			Make timing deterministic [1:47 PM]
+				UIViewControllerTransitionCoordinator [1:48 PM]
+	Auto Layout [1:48 PM]
+		Don't call removeAllConstraints [1:50 PM]
+		Use explicit constraint references [1:50 PM]
+		Use the minimum # of constraints to get the layout you want [1:52 PM]
+		UIView.hasAmbiguousLayout [1:56 PM]
+			UIView._autolayoutTrace
+			#session mysteries of auto layout 1/2 [1:56 PM]
+			these can be used for unit testing [1:57 PM]
+	Table and collection views [1:57 PM]
+		Self sizing cells
+			#session mysteries of auto layout part 1
+			animating cell height changes [2:02 PM] ******
+		Collection views [2:04 PM]
+			Fast collection view layout invalidation [2:05 PM]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
