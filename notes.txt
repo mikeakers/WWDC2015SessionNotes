@@ -291,6 +291,39 @@ Advanced NSOperations [0:00]
 		#session Cloudkit tips and tricks
 		Threading programming guide
 
+What's new in HealthKit
+	Unit preferences [4:06]
+		user can set preferred unit preference in health app
+		HKUserPreferencesDidChangeNotification
+	New units
+		Water intake
+			Bluetooth water bottles
+		UV exposure
+		Skin type charicteristic
+			Fitzpatric skin type
+		Reproductive health [7:30]
+			Basal body temp
+			Cervical mucus quality
+			Ovulation
+			Menstrual Flow
+			Vaginal spotting
+			Sexual activity
+	Sources and Device Metadata [12:45]
+		sourceRevision (version of the app that sampled)
+			HKSource and version string from App Bundle
+		Device
+			HKDevice
+			app creates device and provides values
+	Deleting objects [18:00]
+	HealthKit on watchOS [22:00]
+		Workouts
+
+
+
+
+
+
+
 
 To watch:
 	Protocol-Oriented Programming in Swift
