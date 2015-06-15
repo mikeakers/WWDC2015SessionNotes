@@ -245,13 +245,56 @@ Cocoa Touch Best Practices [1:30 PM]
 			Fast collection view layout invalidation [2:05 PM]
 
 
+Advanced NSOperations [0:00]
+	maxConcurrentOperationCount [5:00]
+	NSOperation can be longer than dispatch blocks [6:00]
+	Can also be subclassed
+	NSOperation lifecycle [7:00]
+	cancellation [7:00]
+		observe isCancelled in subclasses [8:00]
+	readiness [9:30]
+		ready operations can be executed before pending ops [10:30]
+		by default operations become ready when all their dependancies have completed
+		use addDependency() method [12:00]
+		Avoid circular depenencies to avoid deadlock
+	WWDC App Favorites [13:00]
+	WWDC App Startup [15:00]
+		Operation Depenencies
+	Abstraction [17:15]
+		Operations abstract logic
+		Simplifies logic changes
+	Beyond the basics [19:30]
+		UI Operations
+			Authentication
+			Videos
+			Alerts
+			Any sort of "modal" ui was a great place to use an NSOperation
+		Block operations [22:00]
+			Able to guarantee that the leave feedback sheet can't appear until after the user's logged in [23:00]
+		Generating dependencies [24:00]
+		Extending readiness [26:30]
+			"only execute this if..."
+		Composing Operations [28:00]
+			Downloading and parsing
+		Mutual Exclusivity [32:50]
+			Cross queue dependencies
+	sample code [36:00]
+		Earthquakes app built entirely in operations
+		uses code extrated from WWDC App
+		Oeration is a subclass on NSOperation
+			Adds "conditions"
+			Adds "observers"
+		OperationCondition
+		OperationObserver
+	Summary [42:00]
+		#sessios Building responsive and efficient apps with GCD
+		#session Cloudkit tips and tricks
+		Threading programming guide
 
 
-
-
-
-
-
+To watch:
+	Protocol-Oriented Programming in Swift
+	Profiling in Depth
 
 
 
